@@ -39,5 +39,5 @@ jobs:
       - run: npm pack
 
       - store_artifacts:
-          path: statusok-1.0.0.zip
+          path: package.zip
           destination: artifact-file
