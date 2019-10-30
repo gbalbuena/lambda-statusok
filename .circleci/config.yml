@@ -36,4 +36,4 @@ jobs:
       # run tests!
       - run: npm test
 
-      - pack: npm pack
+      - run: npm pack
