@@ -37,3 +37,7 @@ jobs:
       - run: npm test
 
       - run: npm pack
+
+      - store_artifacts:
+          path: /statusok-*.zip
+          destination: artifact-file
