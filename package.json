@@ -1,0 +1,14 @@
+{
+  "name": "statusok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postpack": "tarball=$(npm list --depth=0 | sed 's/@/-/g; s/ .*/.tgz/g; 1q;'); tar -tf $tarball | sed 's/^package\\///' | zip -@r package; rm $tarball"
+  },
+  "contributors": [
+    "Gabriel"
+  ],
+  "license": "ISC"
+}
